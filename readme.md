@@ -27,8 +27,8 @@ This is a simple to-do list application built with [Expo](https://expo.dev/), [N
 1. **Clone the Repository**
 
     ```bash
-    git clone https://github.com/MasFana/ReactNative-Firebase-Example
-    cd ReactNative-Firebase-Example
+    git clone https://github.com/MasFana/ReactNative-Firebase-ToDo
+    cd ReactNative-Firebase-ToDo
     ```
 
 2. **Install Dependencies**
