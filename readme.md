@@ -84,7 +84,6 @@ This is a simple to-do list application built with [Expo](https://expo.dev/), [N
 - [expo-env](https://docs.expo.dev/guides/environment-variables/)
 
 ## Screenshots
-## Screenshots
 
 | Add Task | Edit Task | Delete Task |
 |----------|-----------|-------------|
