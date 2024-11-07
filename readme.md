@@ -1,101 +1,93 @@
 
-# React Native Expo + NativeWind Starter Template
+# Expo NativeWind Firebase To-Do App
 
-This is a starter template for building mobile applications using **React Native**, **Expo**, and **NativeWind**. This setup provides a streamlined development environment for building cross-platform apps with Tailwind CSS styling through NativeWind.
+This is a simple to-do list application built with [Expo](https://expo.dev/), [NativeWind](https://nativewind.dev/), and [Firebase](https://firebase.google.com/) Firestore. The app demonstrates how to set up a basic to-do list using Firebase for data storage and NativeWind for styling in a React Native environment.
 
 ## Features
 
-- **React Native** with Expo for seamless cross-platform development
-- **NativeWind** for Tailwind CSS styling in React Native
-- **Expo** for easy setup and fast development with managed workflows
-- **TypeScript** support for type-safe code (if enabled)
+- Add, update, and delete to-do items
+- Persistent storage with Firebase Firestore
+- Real-time updates for to-do items
+- Styled with Tailwind CSS utility classes via NativeWind
+
+## Tech Stack
+
+- **Expo** - Development framework for building React Native apps.
+- **NativeWind** - Tailwind CSS styling for React Native components.
+- **Firebase Firestore** - Backend-as-a-service for storing and syncing data.
 
 ## Prerequisites
 
-Make sure you have the following installed:
+- [Node.js](https://nodejs.org/) and [pnpm](https://pnpm.io/) for package management.
+- Expo CLI: Install via `npm install -g expo-cli`
+- Firebase account and Firestore project set up.
 
-- **Node.js** (v14 or newer)
-- **npm** or **pnpm** package manager
-- **Expo CLI**: Install via `npm install -g expo-cli`
+## Setup Instructions
 
-## Getting Started
+1. **Clone the Repository**
 
-### 1. Clone the Repository
+    ```bash
+    git clone https://github.com/MasFana/ReactNative-Firebase-Example
+    cd expo-nativewind-firebase-todo-app
+    ```
 
-```bash
-git clone https://github.com/MasFana/Nativewind-Starter
-cd Nativewind-Starter
-```
+2. **Install Dependencies**
 
-### 2. Install Dependencies
+    ```bash
+    pnpm install
+    ```
 
-Use `npm` to install the necessary dependencies:
+3. **Configure Firebase**
 
-```bash
-npm install
-```
-#### OR
+   - Go to the [Firebase Console](https://console.firebase.google.com/) and create a new project.
+   - In the Firestore database, create a collection named `todos`.
+   - Copy your Firebase config object (from Project Settings) and add it to a firebase.js
 
-Use `pnpm` to install the necessary dependencies:
+    ```javascript
+	const firebaseConfig = {
+	    apiKey: "",
+	    authDomain: "",
+	    projectId: "",
+	    storageBucket: "",
+	    messagingSenderId: "",
+	    appId: ""
+	};
+    ```
 
-```bash
-pnpm install
-```
+4. **Start the Project**
 
-### 3. Start the Development Server
+    ```bash
+    expo start
+    ```
 
-Launch the Expo development server with:
-
-```bash
-npm start
-```
-
-#### OR
-
-```bash
-pnpm start
-```
-
-This will start the Expo development environment, where you can preview the app on an emulator or physical device.
+   This will launch the Expo server, and you can run the app on an iOS/Android emulator or a real device using the Expo Go app.
 
 ## Project Structure
 
-```plaintext
-.
-├── App.jsx             # Main application entry
-├── assets/            # Asset files (images, fonts, etc.)
-├── components/        # Reusable components
-├── screens/           # Screen components for navigation
-└── tailwind.config.js # Tailwind CSS configuration for NativeWind
-```
+- **/components** - Reusable UI components
+- **/screens** - App screens (e.g., Home, Add Todo)
+- **/firebase** - Firebase configuration and Firestore interaction functions
+- **App.js** - Entry point for the app, sets up navigation and global providers
 
-## Configuration
+## Usage
 
-### Tailwind CSS with NativeWind
+1. Add a new task by entering text and clicking the **Tambah** button.
+2. Update or delete tasks by interacting with the options available in the to-do list.
+3. The app syncs all changes with Firebase Firestore in real-time.
 
-1. Configure **Tailwind CSS** in `tailwind.config.js`:
+## Dependencies
 
-    ```js
-    // tailwind.config.js
-    module.exports = {
-      content: [
-        "./App.js",
-        "./screens/**/*.{js,jsx,ts,tsx}",
-        "./components/**/*.{js,jsx,ts,tsx}"
-      ],
-      theme: {
-        extend: {},
-      },
-      plugins: [],
-    }
-    ```
+- [expo](https://expo.dev/)
+- [react-native](https://reactnative.dev/)
+- [nativewind](https://nativewind.dev/)
+- [firebase](https://firebase.google.com/docs/web/setup)
+- [expo-env](https://docs.expo.dev/guides/environment-variables/)
 
-2. **NativeWind** is already configured to support Tailwind classes in your React Native components. Use Tailwind classes as usual in your components.
-3.  *Optional* you can install **Tailwind CSS IntelliSense** Extension in VSCode 
+## Screenshots
+![alt text](image.png)
+![alt text](edit_image.png)
+![alt text](hapus_image.png)
 
+## License
 
-## Scripts
-
-- **`pnpm start`** - Start the Expo development server
-- **`pnpm build`** - Build the app for production
-
+This project is licensed under the MIT License.
