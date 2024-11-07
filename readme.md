@@ -57,7 +57,7 @@ This is a simple to-do list application built with [Expo](https://expo.dev/), [N
 4. **Start the Project**
 
     ```bash
-    expo start
+    npm start
     ```
 
    This will launch the Expo server, and you can run the app on an iOS/Android emulator or a real device using the Expo Go app.
