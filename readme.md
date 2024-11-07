@@ -18,7 +18,7 @@ This is a simple to-do list application built with [Expo](https://expo.dev/), [N
 
 ## Prerequisites
 
-- [Node.js](https://nodejs.org/) and [pnpm](https://pnpm.io/) for package management.
+- [Node.js](https://nodejs.org/) and [npm](https://npm.io/) for package management.
 - Expo CLI: Install via `npm install -g expo-cli`
 - Firebase account and Firestore project set up.
 
@@ -34,7 +34,7 @@ This is a simple to-do list application built with [Expo](https://expo.dev/), [N
 2. **Install Dependencies**
 
     ```bash
-    pnpm install
+    npm install
     ```
 
 3. **Configure Firebase**
