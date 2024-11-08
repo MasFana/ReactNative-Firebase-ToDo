@@ -88,8 +88,3 @@ This is a simple to-do list application built with [Expo](https://expo.dev/), [N
 | Add Task | Edit Task | Delete Task |
 |----------|-----------|-------------|
 | ![Add Task](image.png) | ![Edit Task](edit_image.png) | ![Delete Task](hapus_image.png) |
-
-
-## License
-
-This project is licensed under the MIT License.
