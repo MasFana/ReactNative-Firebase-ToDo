@@ -3,9 +3,9 @@ import { getFirestore, collection, addDoc, deleteDoc, doc, onSnapshot, query, or
 
 const firebaseConfig = {
     apiKey: "",
-    authDomain: "",
-    projectId: "",
-    storageBucket: "",
+    authDomain: "belajarfuncpro.firebaseapp.com",
+    projectId: "belajarfuncpro",
+    storageBucket: "belajarfuncpro.firebasestorage.app",
     messagingSenderId: "",
     appId: ""
 };
